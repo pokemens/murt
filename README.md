@@ -2,7 +2,7 @@ Hey! You found the repo!
 
 Here are some fun facts about the project: 
 
--The character's original name was "Murt" but "Babak" won out by a thin margin
+-The character's original name was almost "Babak"
 
 -This was created because the creator felt his brain atrophying looking at derivative-of-derivative projects on DEX. He wanted to create something new, with a real movement, and a real mission. 
 
@@ -11,3 +11,23 @@ Here are some fun facts about the project:
 -Where do we go if Nintendo adopts the creature? We go from a Babak advocacy group to a Babak appreciation group :)
 
 Thank you to all Believers of Babak
+
+    .____.
+    (o_o)
+    /)_)\
+   _| |_
+   \   /
+    ) (
+   /   \
+  /     \
+ /       \
+|         |
+ \       /
+  \  |  /
+   \ | /
+   _| |_
+  |     |
+  |     |
+  /     \
+ /       \
+/         \
