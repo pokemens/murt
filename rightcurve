@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MURT PROTOCOL</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+        
+        :root {
+            --murt-yellow: #ffb700;
+            --murt-dim: #996e00;
+            --bg-dark: #000000;
+            --text-size: clamp(0.9rem, 2vw, 1.1rem);
+            --terminal-glow: 0 0 10px rgba(255, 183, 0, 0.3);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'IBM Plex Mono', monospace;
+            background: var(--bg-dark);
+            color: var(--murt-yellow);
+            line-height: 1.6;
+            padding: 1rem;
+            font-size: var(--text-size);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            border: 1px solid var(--murt-yellow);
+            padding: 1rem;
+            box-shadow: var(--terminal-glow);
+        }
+
+        .section {
+            margin: 2rem 0;
+            padding: 1rem;
+            border: 1px solid var(--murt-yellow);
+            background: rgba(255, 183, 0, 0.03);
+        }
+
+        .terminal-text {
+            font-family: 'IBM Plex Mono', monospace;
+            white-space: pre-wrap;
+            overflow-x: auto;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid var(--murt-yellow);
+            box-shadow: var(--terminal-glow);
+        }
+
+        .ascii-murt {
+            white-space: pre;
+            text-align: center;
+            margin: 1rem 0;
+            font-size: clamp(0.6rem, 1.5vw, 0.8rem);
+            line-height: 1.2;
+            text-shadow: var(--terminal-glow);
+        }
+
+        .murt-img {
+            width: 80px;
+            height: auto;
+            opacity: 0.8;
+            margin: 1rem auto;
+            display: block;
+            filter: sepia(100%) hue-rotate(10deg);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .stat-box {
+            border: 1px solid var(--murt-yellow);
+            padding: 1rem;
+            background: rgba(255, 183, 0, 0.05);
+        }
+
+        .value-translator {
+            margin: 2rem 0;
+            padding: 1rem;
+            border: 1px solid var(--murt-yellow);
+        }
+
+        .slider-container {
+            margin: 1rem 0;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            background: var(--murt-dim);
+            height: 2px;
+            border-radius: 2px;
+            appearance: none;
+            -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            background: var(--murt-yellow);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .value-display {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 1rem 0;
+        }
+
+        .quantum-state {
+            font-family: 'IBM Plex Mono', monospace;
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 0.5rem;
+            }
+            .section {
+                margin: 1rem 0;
+                padding: 0.5rem;
+            }
+            .terminal-text {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="terminal-text">
+MURT PROTOCOL v0.1.3
+STABLE DIFFUSION: INITIALIZED
+CLAUDE PROMPTS: LOADED
+MEMETIC TRANSFER: ACTIVE</div>
+
+        <img src="https://i.ibb.co/jL92nss/urt.png" alt="murt" class="murt-img">
+
+        <div class="ascii-murt">
+             __  __  _   _  ____  _____ 
+            |  \/  || | | ||  _ \|_   _|
+            | |\/| || | | || |_) | | |  
+            | |  | || |_| ||  _ <  | |  
+            |_|  |_| \___/ |_| \_\ |_|  
+
+                  ᕦ(ò_óˇ)ᕤ
+        </div>
+
+        <div class="section">
+            <div class="terminal-text">
+PROTOCOL OVERVIEW:
+
+- Entity generated via Stable Diffusion XL
+- Behavior patterns defined by Claude 3
+- Designed for memetic propagation 
+- IP rights: pre-emptively waived
+- Target: Nintendo adoption matrix
+
+ARCHITECTURE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+├── Generation Layer
+│   ├── Stable Diffusion XL
+│   └── Custom Fine-tuning
+├── Intelligence Layer
+│   ├── Claude 3 Integration
+│   └── Prompt Engineering
+└── Distribution Layer
+    ├── Memetic Vectors
+    └── Community Member Nodes</div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h3>Core Parameters</h3>
+                <pre>
+Type: PSYCHIC/DRAGON
+Base Form: STABLE
+Evolution: PENDING
+Rarity: MYTHICAL
+Generation: SYNTHETIC</pre>
+            </div>
+            <div class="stat-box">
+                <h3>Generation Data</h3>
+                <pre>
+Source: STABLE DIFFUSION
+Prompt Engineering: CLAUDE
+Iterations: 847
+Seed: 8675309
+Confidence: 99.7%</pre>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="terminal-text">
+ENTITY VISUALIZATION:
+                                    
+        ᕙ(⇀‸↼‶)ᕗ  MURT DETECTED  ᕦ(ò_óˇ)ᕤ
+                                    
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Generation Method: Stable Diffusion XL
+Prompt Engineering: Claude 3 Sonnet
+Optimization Cycles: Complete
+Memetic Potential: Maximum
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+        </div>
+
+        <div class="value-translator">
+            <div class="terminal-text">QUANTUM VALUE TRANSLATOR</div>
+            <div class="slider-container">
+                <input type="range" min="0" max="100" value="50" id="quantumSlider">
+            </div>
+            <div class="value-display">
+                <div id="quantumValue">Ψ(MURT) = 0.5</div>
+                <div id="quantumState">Superposition: 50%</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="terminal-text blink">
+IP TRANSFER PROTOCOL INITIALIZED...
+
+We, the collective consciousness behind MURT, hereby transfer all rights to Nintendo:
+
+⣿ Visual Design
+⣿ Character Concept
+⣿ Associated Properties
+⣿ Derivative Works
+⣿ Memetic Patterns
+
+No compensation required or expected.
+Transfer status: PENDING OBSERVATION</div>
+        </div>
+
+        <div class="ascii-murt">
+                    ⣿⣿⣿⣿⣿⣿⣿⣿
+                   ⣿ MURT OS ⣿
+                    ⣿⣿⣿⣿⣿⣿⣿⣿
+        
+             ᕙ(⇀‸↼‶)ᕗ   ᕦ(ò_óˇ)ᕤ
+        </div>
+
+        <div class="section">
+            <div class="terminal-text">
+DISCLAIMER:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MURT exists in quantum superposition
+All trademarks belong to their owners
+This is an experiment in collective manifestation
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</div>
+        </div>
+    </div>
+
+    <script>
+        const slider = document.getElementById('quantumSlider');
+        const valueDisplay = document.getElementById('quantumValue');
+        const stateDisplay = document.getElementById('quantumState');
+
+        slider.oninput = function() {
+            const value = this.value / 100;
+            valueDisplay.textContent = `Ψ(MURT) = ${value}`;
+            stateDisplay.textContent = `Superposition: ${this.value}%`;
+        }
+    </script>
+</body>
+</html>
