@@ -10,7 +10,7 @@ Here are some fun facts about the project:
 
 -Where do we go if Nintendo adopts the creature? We go from a Babak advocacy group to a Babak appreciation group :)
 
-Thank you to all Believers of Babak
+Thank you to all Believers of Murt
 
     .____.
     (o_o)
