@@ -34,7 +34,7 @@
         .theme-toggle {
             position: absolute;
             top: 1rem;
-            right: 1rem;
+            left: 1rem;
             display: flex;
             align-items: center;
         }
@@ -137,7 +137,34 @@
             text-align: center;
             font-size: 0.875rem;
             margin-top: 1rem;
+            overflow: hidden;
+            white-space: nowrap;
             display: none;
+        }
+        .easter-egg-content {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll-left 10s linear infinite;
+        }
+        @keyframes scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .adopt-button {
+            display: block;
+            width: 200px;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            background-color: #2196F3;
+            color: white;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .adopt-button:hover {
+            background-color: #1976D2;
         }
         @media (min-width: 768px) {
             .container {
@@ -168,7 +195,7 @@
         
         <img src="https://i.ibb.co/jL92nss/urt.png" alt="Murt character" style="width: 5rem; height: 5rem; object-fit: contain; margin: 1rem auto; display: block;">
         
-        <h1>Welcome to $Murt</h1>
+        <h1>Welcome to Murt</h1>
         <h2>Choose your investor type to continue</h2>
         
         <div class="card">
@@ -176,7 +203,7 @@
                 <img src="https://i.ibb.co/CBShC7t/4qnhqj.webp" alt="IQ distribution graph with three character types">
                 <a href="https://pokemens.github.io/murt/leftcurve" target="_blank" rel="noopener noreferrer" class="clickable-area left-area" aria-label="Left section - Visit Murt"></a>
                 <a href="https://ripple.com/" target="_blank" rel="noopener noreferrer" class="clickable-area middle-area" aria-label="Middle section - Visit Ripple"></a>
-                <a href="https://pokemens.github.io/murt/rightcurve" target="_blank" rel="noopener noreferrer" class="clickable-area right-area" aria-label="Right section - Visit Murt"></a>
+                <a href="https://pokemens.github.io/murt/leftcurve" target="_blank" rel="noopener noreferrer" class="clickable-area right-area" aria-label="Right section - Visit Murt"></a>
             </div>
         </div>
         
@@ -188,7 +215,15 @@
         
         <div class="coming-soon">Coming Soon</div>
         
-        <div id="easterEgg" class="easter-egg">#FlipFartcoin 🦍💨</div>
+        <div id="easterEgg" class="easter-egg">
+            <div class="easter-egg-content">
+                #FlipFartcoin 🦍💨 #FlipFartcoin 🦍💨 #FlipFartcoin 🦍💨 #FlipFartcoin 🦍💨 #FlipFartcoin 🦍💨 #FlipFartcoin 🦍💨
+            </div>
+        </div>
+
+        <a href="https://virtuals.io" target="_blank" rel="noopener noreferrer" class="adopt-button">
+            BUY $MURT
+        </a>
     </div>
 
     <script>
